@@ -17,7 +17,7 @@ permalink: /papers-and-talks/
 
 <ol reversed>
 <li markdown="1">
-L. M. B. Varona. *A polynomial-time algorithm for recognizing high-bandwidth graphs.* [arXiv:2602.01755](https://doi.org/10.48550/arXiv.2602.01755) [cs.DS], 2026. Under review at *Discrete Applied Mathematics*.
+L. M. B. Varona. *A polynomial-time algorithm for recognizing high-bandwidth graphs.* [arXiv:2602.01755](https://doi.org/10.48550/arXiv.2602.01755) [cs.DS], 2026.
 </li>
 <li markdown="1">
 F. A. Steinke and L. M. B. Varona. *Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers.* [arXiv:2601.01962](https://doi.org/10.48550/arXiv.2601.01962) [math.CO], 2026. Under review at the *Rose-Hulman Undergraduate Mathematics Journal*.
@@ -31,10 +31,10 @@ N. Johnston, S. Plosker, C. Torrance, and L. M. B. Varona. *Generalizing the Cau
 
 <ol reversed>
 <li markdown="1">
-C. Brett and L. M. B. Varona. *The effects of changes in effective prices of services on municipal tax rates: evidence from New Brunswick* (working title).
+W. A. Hunt and L. M. B. Varona. *Foundational models of sociopolitical change lag behind the ongoing reality of an algorithmic revolution* (working title).
 </li>
 <li markdown="1">
-W. A. Hunt and L. M. B. Varona. *Foundational models of sociopolitical change lag behind the ongoing reality of an algorithmic revolution* (working title).
+C. Brett and L. M. B. Varona. *The effects of changes in effective prices of services on municipal tax rates: evidence from New Brunswick* (working title).
 </li>
 <li markdown="1">
 L. M. B. Varona. *Formal language learning in bandwidth-constrained recurrent neural networks* (working title).
