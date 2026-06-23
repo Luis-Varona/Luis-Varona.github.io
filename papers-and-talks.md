@@ -23,7 +23,7 @@ L. M. B. Varona. *A polynomial-time algorithm for recognizing high-bandwidth gra
 F. A. Steinke and L. M. B. Varona. *Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers.* [arXiv:2601.01962](https://doi.org/10.48550/arXiv.2601.01962) [math.CO], 2026. Under review at the *Rose-Hulman Undergraduate Mathematics Journal*.
 </li>
 <li markdown="1">
-N. Johnston, S. Plosker, C. Torrance, and L. M. B. Varona. *Generalizing the Cauchy–Schwarz inequality: Hadamard powers and tensor products.* [arXiv:2507.10327](https://doi.org/10.48550/arXiv.2507.10327) [math.FA], 2025. Under review at *Linear and Multilinear Algebra*.
+N. Johnston, S. Plosker, C. Torrance, and L. M. B. Varona. *Generalizing the Cauchy–Schwarz inequality: Hadamard powers and tensor products.* [arXiv:2507.10327](https://doi.org/10.48550/arXiv.2507.10327) [math.FA], 2025. Invited to revise and resubmit to *Linear and Multilinear Algebra*.
 </li>
 </ol>
 
