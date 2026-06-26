@@ -47,7 +47,7 @@ Math was the first subject in which I conducted undergraduate research, and it r
 
 ### Abstract linear algebra
 
-My very first research project back in Summer 2024 was with Dr. Johnston, [Dr. Sarah Plosker](https://people.brandonu.ca/ploskers/) of Brandon University, and my friend Charles Torrance (who just recently graduated from Mount A!). This remains the most "pure math-y" of my projects to date, and by a considerable margin at that—we explored several Cauchy–Schwarz-type bounds tightening and/or generalizing the original inequality. (This is, loosely, connected to Drs. Johnston and Plosker's main research focus of quantum information theory via applications to separability of states.) Our paper, currently under journal review, is available as [a preprint on the arXiv](https://doi.org/10.48550/arXiv.2507.10327).
+My very first research project back in Summer 2024 was with Dr. Johnston, [Dr. Sarah Plosker](https://people.brandonu.ca/ploskers/) of Brandon University, and my friend Charles Torrance (who just recently graduated from Mount A!). This remains the most "pure math-y" of my projects to date, and by a considerable margin at that—we explored several Cauchy–Schwarz-type bounds tightening and/or generalizing the original inequality. (This is, loosely, connected to Drs. Johnston and Plosker's main research focus of quantum information theory via applications to separability of states.) Our paper, currently in the revise & resubmit phase at *Linear and Multilinear Algebra*, is available as [a preprint on the arXiv](https://doi.org/10.48550/arXiv.2507.10327).
 
 ### Spectral graph theory
 
