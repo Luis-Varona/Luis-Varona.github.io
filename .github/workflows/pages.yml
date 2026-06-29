@@ -27,14 +27,14 @@ jobs:
         run: mkdir -p assets/cv/ assets/slides/
 
       - name: Cache compiled CV
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: cv-cache
         with:
           path: assets/cv/cv.pdf
           key: cv-${{ hashFiles('_cv/**') }}
 
       - name: Cache compiled slides
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: slides-cache
         with:
           path: assets/slides/
