@@ -25,14 +25,14 @@ title:                 Luis M. B. Varona
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Research in graph algorithms, neural network theory,
-  political philosophy, spectral graph theory, and public finance.
+  Researcher in political philosophy, social network analysis,
+  graph algorithms, spectral graph theory, and public finance.
 
 # A shorter description for the sidebar.
-tagline:               Graph algorithms, neural network theory, and political philosophy
+tagline:               Researcher in political philosophy, social network analysis, and graph algorithms
 
 # A list of keywords for your blog
-keywords:              [graph algorithms, neural network theory, political philosophy, spectral graph theory, public finance]
+keywords:              [political philosophy, social network analysis, graph algorithms, spectral graph theory, public finance]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.

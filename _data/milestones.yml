@@ -1,0 +1,85 @@
+- date: "2026-08"
+  text: >-
+    My paper [*Generalizing the Cauchy–Schwarz inequality: Hadamard powers and tensor products*](https://doi.org/10.1080/03081087.2026.2707240) with Dr. Johnston, Dr. Plosker, and Charles Torrance (a recent MtA graduate) is published in *Linear and Multilinear Algebra*
+
+- date: "2026-07"
+  text: >-
+    I give a lightning talk at the [East Coast Combinatorics Conference](https://www.aarms.math.ca/events/east-coast-combinatorics-conference) on heuristic algorithms for weighted graph bandwidth (an in-progress project with Alexander Matheson, another undergrad at MtA)
+
+- date: "2026-07"
+  text: >-
+    Dr. Johnston, Dr. Plosker, and I post [*Enumeration of Laplacian integral and {{MATH_1}}-diagonalizable graphs*](https://doi.org/10.48550/arXiv.2607.06336) on the arXiv, then submit it to *Discrete Applied Mathematics*
+  math:
+    - placeholder: "{{MATH_1}}"
+      tex: '$$\{-1,0,1\}$$'
+
+- date: "2026-07"
+  text: >-
+    Dr. Brett hires me back for two more months of summer research, this time to study game theory on social networks in addition to finalizing our public finance paper
+
+- date: "2026-05"
+  text: >-
+    I officially complete my math honours thesis with Dr. Johnston (a year before graduation)
+
+- date: "2026-04"
+  text: >-
+    I start my first summer of political science research (concurrently with my computer science grant) with [Dr. Wayne A. Hunt](https://mta.ca/directory/wayne-hunt), studying the political philosophy of technology & society
+
+- date: "2026-03"
+  text: >-
+    I receive [a grant](https://mta.ca/current-students/experiences-and-career/student-research/independent-student-research-grants) to conduct an independent computer science research project of my choosing (namely, [my RNN project]({{LINK_1}})) for the summer
+  links:
+    - placeholder: "{{LINK_1}}"
+      path: /research/#neural-network-theory
+
+- date: "2026-03"
+  text: >-
+    I speak again at [AUPAC](https://event.fourwaves.com/2026aupac/pages) on heuristic algorithms for decomposing quantum states
+
+- date: "2026-02"
+  text: >-
+    I post [*A polynomial-time algorithm for recognizing high-bandwidth graphs*](https://doi.org/10.48550/arXiv.2602.01755) (currently under revision for a v2 preprint and journal submission) on the arXiv
+
+- date: "2026-01"
+  text: >-
+    I post [*Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers*](https://doi.org/10.48550/arXiv.2601.01962) (now under review at the *Rose-Hulman Undergraduate Mathematics Journal*) on the arXiv with U of G student Finn Steinke
+
+- date: "2025-12"
+  text: >-
+    [MatrixBandwidth.jl](https://luis-varona.github.io/MatrixBandwidth.jl/) (my scientific computing Julia package) is peer-reviewed and [published](https://doi.org/10.21105/joss.09136) in the *Journal of Open Source Software*
+
+- date: "2025-10"
+  text: >-
+    My competitive programming team, the MTA Computer Cats, wins [3rd Place](https://scienceatlantic.ca/wp-content/uploads/Student-Awards-Yearbook-2025-2026/Student-Awards-Yearbook-2025-2026.html#page=10) at the Atlantic Canada Programming Competition
+
+- date: "2025-10"
+  text: >-
+    I return to [Science Atlantic MSCS](https://event.fourwaves.com/mscs2025/pages) to give a talk on graph bandwidth algorithms, winning the [2nd Place Undergraduate Research Award for Computer Science](https://scienceatlantic.ca/wp-content/uploads/Student-Awards-Yearbook-2025-2026/Student-Awards-Yearbook-2025-2026.html#page=8)
+
+- date: "2025-09"
+  text: >-
+    [Dr. Craig Brett](https://mta.ca/directory/craig-brett) hires me to do part-time economics research in public finance for the Fall term
+
+- date: "2025-05"
+  text: >-
+    The same summer, I concurrently work as a Student Researcher for the [Government of New Brunswick's Accessibility Office](https://www.gnb.ca/en/campaign/accessibility.html), looking into education policy and legislation
+
+- date: "2025-05"
+  text: >-
+    I return to do more spectral graph theory research with Dr. Johnston for the summer
+
+- date: "2025-02"
+  text: >-
+    I present at the [Atlantic Undergraduate Physics and Astronomy Conference (AUPAC)](https://event.fourwaves.com/aupac-2025-mun/pages), again on quantum computing
+
+- date: "2024-10"
+  text: >-
+    I present at the [Science Atlantic Mathematics, Statistics, and Computer Science (MSCS) Conference](https://event.fourwaves.com/mscs2024/pages) on my quantum information theory research
+
+- date: "2024-04"
+  text: >-
+    I start my first summer of math research with Drs. [Nathaniel Johnston](https://njohnston.ca/) and [Sarah Plosker](https://people.brandonu.ca/ploskers/) on spectral graph theory and quantum information theory
+
+- date: "2022-09"
+  text: >-
+    I begin my Bachelor of Arts degree at Mount Allison University in the PPE (Philosophy, Politics, and Economics) program (which I later switch out of into my current program)
