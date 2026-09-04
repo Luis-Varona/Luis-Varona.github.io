@@ -6,4 +6,4 @@ description: >
 permalink: /cv/
 ---
 
-A copy of my curriculum vitae (last updated 2026-08). [\[PDF\]](/assets/cv/cv.pdf) [\[source code\]](/assets/cv/cv.tex)
+A copy of my curriculum vitae (last updated 2026-09). [\[PDF\]](/assets/cv/cv.pdf) [\[source code\]](/assets/cv/cv.tex)
