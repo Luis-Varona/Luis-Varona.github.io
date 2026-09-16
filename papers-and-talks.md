@@ -41,7 +41,7 @@ F. A. Steinke and L. M. B. Varona. *Efficient spectral bounds on the chromatic n
 C. Brett and L. M. B. Varona. *Formation of bounded-degree communication networks with endogenous link strength* (working title).
 </li>
 <li markdown="1">
-L. M. B. Varona and W. A. Hunt. *Foundational models of sociopolitical change lag behind the ongoing reality of an algorithmic revolution* (working title).
+L. M. B. Varona and W. A. Hunt. *The evolution of digital capitalism: a new form of class politics in the algorithmic age* (working title).
 </li>
 <li markdown="1">
 C. Brett and L. M. B. Varona. *The effects of changes in effective prices of services on municipal tax rates: evidence from New Brunswick* (working title).
@@ -52,18 +52,18 @@ C. Brett and L. M. B. Varona. *The effects of changes in effective prices of ser
 
 <ol reversed>
 <li markdown="1">
-Heuristic Bandwidth Reduction Algorithms for Weighted Graphs. East Coast Combinatorics Conference 2026, Mount Allison University (Sackville, NB). July 2026. *(Joint work with A. Matheson.)* [\[PDF\]](/assets/slides/eccc-2026.pdf) [\[source code\]](/assets/slides/eccc-2026.tar.gz)
+Heuristic Bandwidth Reduction Algorithms for Weighted Graphs. 19<sup>th</sup> East Coast Combinatorics Conference, Mount Allison University (Sackville, NB). July 2026. *(Joint work with A. Matheson.)* [\[PDF\]](/assets/slides/eccc-2026.pdf) [\[source code\]](/assets/slides/eccc-2026.tar.gz)
 </li>
 <li markdown="1">
-Spectral Heuristics for $$k$$-Incoherent Decompositions. Atlantic Undergrad. Physics & Astro. Conference 2026, University of Prince Edward Island (Charlottetown, PE). March 2026. [\[PDF\]](/assets/slides/aupac-2026.pdf) [\[source code\]](/assets/slides/aupac-2026.tar.gz)
+Spectral Heuristics for $$k$$-Incoherent Decompositions. 2026 Atlantic Undergrad. Physics \& Astro. Conference, University of Prince Edward Island (Charlottetown, PE). March 2026. [\[PDF\]](/assets/slides/aupac-2026.pdf) [\[source code\]](/assets/slides/aupac-2026.tar.gz)
 </li>
 <li markdown="1">
-Advancements in Graph Bandwidth Reduction. Science Atlantic Math., Stats., & CS Conference 2025, Cape Breton University (Sydney, NS). October 2025. *(Joint work with N. Johnston.)* **2nd Place Undergraduate Research Award for Computer Science.** [\[PDF\]](/assets/slides/mscs-2025.pdf) [\[source code\]](/assets/slides/mscs-2025.tar.gz)
+Advancements in Graph Bandwidth Reduction. 2025 Science Atlantic Math., Stats., \& CS Conference, Cape Breton University (Sydney, NS). October 2025. *(Joint work with N. Johnston.)* **2nd Place Undergraduate Research Award for Computer Science.** [\[PDF\]](/assets/slides/mscs-2025.pdf) [\[source code\]](/assets/slides/mscs-2025.tar.gz)
 </li>
 <li markdown="1">
-$$S$$-Bandwidth as an Indicator of PST on Quantum Networks. Atlantic Undergrad. Physics & Astro. Conference 2025, Memorial University of Newfoundland (St. John's, NL). February 2025. *(Joint work with N. Johnston and S. Plosker.)* [\[PDF\]](/assets/slides/aupac-2025.pdf) [\[source code\]](/assets/slides/aupac-2025.tar.gz)
+$$S$$-Bandwidth as an Indicator of PST on Quantum Networks. 2025 Atlantic Undergrad. Physics \& Astro. Conference, Memorial University of Newfoundland (St. John's, NL). February 2025. *(Joint work with N. Johnston and S. Plosker.)* [\[PDF\]](/assets/slides/aupac-2025.pdf) [\[source code\]](/assets/slides/aupac-2025.tar.gz)
 </li>
 <li markdown="1">
-Computing the $$S$$-Bandwidth of a Quantum Network. Science Atlantic Math., Stats., & CS Conference 2024, Acadia University (Wolfville, NS). October 2024. *(Joint work with N. Johnston and S. Plosker.)* [\[PDF\]](/assets/slides/mscs-2024.pdf) [\[source code\]](/assets/slides/mscs-2024.tar.gz)
+Computing the $$S$$-Bandwidth of a Quantum Network. 2024 Science Atlantic Math., Stats., \& CS Conference, Acadia University (Wolfville, NS). October 2024. *(Joint work with N. Johnston and S. Plosker.)* [\[PDF\]](/assets/slides/mscs-2024.pdf) [\[source code\]](/assets/slides/mscs-2024.tar.gz)
 </li>
 </ol>
