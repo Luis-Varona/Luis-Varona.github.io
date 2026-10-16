@@ -1,3 +1,11 @@
+- date: "2026-10"
+  text: >-
+    [Dr. Liam Keliher](https://mta.ca/directory/liam-keliher) hires me as a part-time CS research assistant, allowing me to continue my existing research into weighted graph bandwidth algorithms
+
+- date: "2026-10"
+  text: >-
+    [Dr. Jessica Veevers](https://mta.ca/directory/jessica-veevers) hires me to do some OCR and graph visualization work for MtA's Department of Fine Arts
+
 - date: "2026-08"
   text: >-
     My paper [*Generalizing the Cauchy–Schwarz inequality: Hadamard powers and tensor products*](https://doi.org/10.1080/03081087.2026.2707240) with Dr. Johnston, Dr. Plosker, and Charles Torrance (a recent MtA graduate) is published in *Linear and Multilinear Algebra*
@@ -8,7 +16,7 @@
 
 - date: "2026-07"
   text: >-
-    Dr. Johnston, Dr. Plosker, and I post [*Enumeration of Laplacian integral and {{MATH_1}}-diagonalizable graphs*](https://doi.org/10.48550/arXiv.2607.06336) on the arXiv (currently under review at *Discrete Applied Mathematics*)
+    Dr. Johnston, Dr. Plosker, and I post [*Enumeration of Laplacian integral and {{MATH_1}}-diagonalizable graphs*](https://doi.org/10.48550/arXiv.2607.06336) on the arXiv (currently under peer review)
   math:
     - placeholder: "{{MATH_1}}"
       tex: '$$\{-1,0,1\}$$'
@@ -42,7 +50,7 @@
 
 - date: "2026-01"
   text: >-
-    I post [*Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers*](https://doi.org/10.48550/arXiv.2601.01962) (currently under review at the *Rose-Hulman Undergraduate Mathematics Journal*) on the arXiv with U of G student Finn Steinke
+    I post [*Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers*](https://doi.org/10.48550/arXiv.2601.01962) (currently under peer review) on the arXiv with U of G student Finn Steinke
 
 - date: "2025-12"
   text: >-
