@@ -20,7 +20,7 @@ L. M. B. Varona. MatrixBandwidth.jl: Fast algorithms for matrix bandwidth minimi
 </li>
 </ol>
 
-## Submitted Papers & Preprints
+## Submitted Papers and Preprints
 
 <ol reversed>
 <li markdown="1">
@@ -30,7 +30,7 @@ N. Johnston, S. Plosker, and L. M. B. Varona. *Enumeration of Laplacian integral
 L. M. B. Varona. *A polynomial-time algorithm for recognizing high-bandwidth graphs.* E-print: [arXiv:2602.01755](https://doi.org/10.48550/arXiv.2602.01755) [cs.DS], 2026.
 </li>
 <li markdown="1">
-F. A. Steinke and L. M. B. Varona. *Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers.* E-print: [arXiv:2601.01962](https://doi.org/10.48550/arXiv.2601.01962) [math.CO], 2026. (Under review at the *Rose-Hulman Undergraduate Mathematics Journal*.)
+F. A. Steinke and L. M. B. Varona. *Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers.* E-print: [arXiv:2601.01962](https://doi.org/10.48550/arXiv.2601.01962) [math.CO], 2026.
 </li>
 </ol>
 
@@ -41,10 +41,10 @@ F. A. Steinke and L. M. B. Varona. *Efficient spectral bounds on the chromatic n
 C. Brett and L. M. B. Varona. *Unilateral link formation in degree-constrained communication networks* (working title).
 </li>
 <li markdown="1">
-L. M. B. Varona and W. A. Hunt. *The evolution of digital capitalism: a new form of class politics in the algorithmic age* (working title).
+L. M. B. Varona and W. A. Hunt. *Indispensable: The digital capitalist class and Gramscian conditions of revolution* (working title).
 </li>
 <li markdown="1">
-C. Brett and L. M. B. Varona. *The effects of changes in effective prices of services on municipal tax rates: evidence from New Brunswick* (working title).
+C. Brett and L. M. B. Varona. *The effects of changes in effective prices of services on municipal tax rates: Evidence from New Brunswick* (working title).
 </li>
 </ol>
 
@@ -52,7 +52,7 @@ C. Brett and L. M. B. Varona. *The effects of changes in effective prices of ser
 
 <ol reversed>
 <li markdown="1">
-Numerical Mode-Finding in Layered Media via Banded RRQR. 61<sup>st</sup> Canadian Undergrad. Physics Conference, McMaster University (Hamilton, ON). October 2026 (upcoming).
+Numerical Mode-Finding in Layered Media via Banded RRQR. 61<sup>st</sup> Canadian Undergrad. Physics Conference, McMaster University (Hamilton, ON). October 2026. [\[PDF\]](/assets/slides/cupc-2026.pdf) [\[source code\]](/assets/slides/cupc-2026.tar.gz)
 </li>
 <li markdown="1">
 Heuristic Bandwidth Reduction Algorithms for Weighted Graphs. 19<sup>th</sup> East Coast Combinatorics Conference, Mount Allison University (Sackville, NB). July 2026. *(Joint work with A. Matheson.)* [\[PDF\]](/assets/slides/eccc-2026.pdf) [\[source code\]](/assets/slides/eccc-2026.tar.gz)
