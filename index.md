@@ -10,7 +10,7 @@ cover: true
 
 <!--author-->
 
-My three favourite courses at MtA thus far have been Political & Cultural Change, Cryptography, and Real Analysis II (although that may change as I head into my final year!). After finishing my undergraduate degree, I plan to pursue graduate studies in computer science and continue researching social networks, graph algorithms, or graph structures more broadly in some form. I hope to eventually end up in a line of work or research related—at least tangentially so—to public policy and/or democratic governance.
+My four favourite courses at MtA thus far have been Political & Cultural Change, Cryptography, Spectral Graph Theory, and Modern Political Thought. After finishing my undergraduate degree, I plan to pursue graduate studies in computer science and continue researching social networks, graph algorithms, or graph structures more broadly in some form. I hope to eventually end up in a line of work or research related—at least tangentially so—to public policy and/or democratic governance.
 
 My other school-adjacent hobbies/activities include competitive programming and open-source software. Additionally, I have worked on (non-academic) accessibility policy research with the Government of New Brunswick's Accessibility Office, particularly in the education sector. Outside of research and academics, I love cats, reading, travelling, and searching for bears in the woods.
 
