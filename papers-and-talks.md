@@ -52,7 +52,7 @@ C. Brett and L. M. B. Varona. *The effects of changes in effective prices of ser
 
 <ol reversed>
 <li markdown="1">
-Design and Optimization of Degree-Constrained Social Networks. 2026 Science Atlantic Math., Stats., & CS Conference, University of New Brunswick Saint John (Saint John, NB). October 2026. *(Joint work with C. Brett)* [\[PDF\]](/assets/slides/mscs-2026.pdf) [\[source code\]](/assets/slides/mscs-2026.tar.gz)
+Design and Optimization of Degree-Constrained Social Networks. 2026 Science Atlantic Math., Stats., & CS Conference, University of New Brunswick Saint John (Saint John, NB). October 2026. *(Joint work with C. Brett.)* [\[PDF\]](/assets/slides/mscs-2026.pdf) [\[source code\]](/assets/slides/mscs-2026.tar.gz)
 </li>
 <li markdown="1">
 Numerical Mode-Finding in Layered Media via Banded RRQR. 61<sup>st</sup> Canadian Undergrad. Physics Conference, McMaster University (Hamilton, ON). October 2026. [\[PDF\]](/assets/slides/cupc-2026.pdf) [\[source code\]](/assets/slides/cupc-2026.tar.gz)
