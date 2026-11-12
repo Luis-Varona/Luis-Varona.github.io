@@ -1,22 +1,21 @@
 LATEX := pdflatex
 
-name := cv
-in := $(name).tex
-out := $(name).pdf
+names := cv cv_short
+outs := $(addsuffix .pdf,$(names))
 aux_exts := aux log out
 
 .PHONY: all clean aux-clean
 
-all: $(out)
+all: $(outs)
 
-$(out): $(in)
-	$(LATEX) "$(in)"
-	$(LATEX) "$(in)"
+%.pdf: %.tex
+	$(LATEX) "$<"
+	$(LATEX) "$<"
 	@$(MAKE) aux-clean
 
 clean:
 	@$(MAKE) aux-clean
-	@rm -f "$(out)"
+	@rm -f $(outs)
 
 aux-clean:
-	@for ext in $(aux_exts); do rm -f "$(name).$${ext}"; done
+	@for name in $(names); do for ext in $(aux_exts); do rm -f "$${name}.$${ext}"; done; done

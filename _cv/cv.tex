@@ -48,16 +48,17 @@
 \setlength{\voffset}{0.1in}
 \setlength\LTleft{0.2in} % needed to make longtable full-width
 \setlength\LTright{0.2in}
+\setlength{\partopsep}{0pt}
 
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{\vspace{8pt}
+\newcommand{\resheading}[1]{\vspace{0pt}
   \parbox{\textwidth}{\setlength{\FrameSep}{\fboxsep}
     \begin{shaded}
 \setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
     \end{shaded}
-  }\vspace{-5pt}
+  }\vspace{-8pt}
 }
 
 % the next four commands allow for the \ressubheading environment to be 1, 2, 3, or 4 subrows, depending on which command you use. This is admittedly hack-ish, and should probably be replaced by a single more flexible command (with optional arguments) in the future
@@ -124,11 +125,11 @@ Mount Allison University & luismbvarona@protonmail.com \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
 \item
-	\ressubheading{Mount Allison University}{Sackville, NB}{Bachelor of Arts with First Class Honours}{2022 -- 2027 (expected)}
+	\ressubheading{Mount Allison University}{Sackville, NB}{Bachelor of Arts with First Class Honours}{2022 -- 2027 {\normalfont (expected)}}
 	\begin{itemize}
 		\resitem{\textbf{Triple Major} in Mathematics (Hons.), Political Science, and Computer Science \& Economics}
         \resitem{\textbf{Double Minor} in Canadian Public Policy and International Politics}
-        \resitem{\textbf{Thesis:} Computational Methods for Modelling Continuous-Time Quantum Walks \textit{(completed May 2026 under Nathaniel Johnston)}}
+        \resitem{Honours thesis completed in May 2026 under Dr.~Nathaniel Johnston (A+)}
         % \resitem{\textbf{Cumulative GPA:} $4.1/4.3$ (math \& CS), $3.8/4.3$ (overall)}
 	\end{itemize}
 \end{itemize}
@@ -137,16 +138,17 @@ Mount Allison University & luismbvarona@protonmail.com \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Research Interests}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{2pt}
-\par Social network analysis, graph algorithms, graph learning, and computational methods in public policy.\vspace{10pt}
+\vspace{3pt}
+\par Social network analysis, graph algorithms, graph learning, and computational methods in public policy.\vspace{7pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Publications}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \vspace{-0.15in}\subsection*{Peer-Reviewed Journal Articles}
 \begin{revnumerate}
+\setlength{\itemsep}{1pt}
+
 \item
 	N.~Johnston, S.~Plosker, C.~Torrance, and L.~M.~B.~Varona. Generalizing the Cauchy--Schwarz inequality: Hadamard powers and tensor products. \emph{Linear and Multilinear Algebra}, 2026. doi:\hyperref{https://doi.org/10.1080/03081087.2026.2707240}{}{}{10.1080/03081087.2026.2707240}
 
@@ -155,10 +157,15 @@ Mount Allison University & luismbvarona@protonmail.com \\
 \end{revnumerate}
 
 
-\vspace{-0.15in}\subsection*{Submitted Papers and Preprints}
+\vspace{-0.2in}\subsection*{Submitted Papers and Preprints}
 \begin{revnumerate}
+\setlength{\itemsep}{1pt}
+
 % \item
-% 	L.~M.~B.~Varona and W.~A.~Hunt. \emph{Indispensable: The digital capitalist class and Gramscian conditions of revolution}. E-print: \hyperref{https://doi.org/10.2139/ssrn.XXXXXXX}{}{}{SSRN~XXXXXXX}, 2026.
+% 	C.~Brett and L.~M.~B.~Varona. \emph{Unilateral link formation in degree-constrained communication networks}. E-print: \hyperref{https://doi.org/10.48550/arXiv.2701.XXXXX}{}{}{arXiv:2701.XXXXX} [math.CO], 2027. [\textbf{TODO:} Update when out]
+
+% \item
+% 	L.~M.~B.~Varona and W.~A.~Hunt. \emph{Indispensable: The digital capitalist class and Gramscian conditions of revolution}. E-print: \hyperref{https://doi.org/10.2139/ssrn.XXXXXXX}{}{}{SSRN~XXXXXXX}, 2026. [\textbf{TODO:} Update when out]
 
 \item
 	N.~Johnston, S.~Plosker, and L.~M.~B.~Varona. \emph{Enumeration of Laplacian integral and $\{-1,0,1\}$-diagonalizable graphs}. E-print: \hyperref{https://doi.org/10.48550/arXiv.2607.06336}{}{}{arXiv:2607.06336} [math.CO], 2026.
@@ -168,20 +175,7 @@ Mount Allison University & luismbvarona@protonmail.com \\
 
 \item
 	F.~A.~Steinke and L.~M.~B.~Varona. \emph{Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers}. E-print: \hyperref{https://doi.org/10.48550/arXiv.2601.01962}{}{}{arXiv:2601.01962} [math.CO], 2026.
-\end{revnumerate}
-
-
-\vspace{-0.15in}\subsection*{Drafts in Preparation}
-\begin{revnumerate}
-\item
-    C.~Brett and L.~M.~B.~Varona. \emph{Unilateral link formation in degree-constrained communication networks} (working title).
-
-\item
-    L.~M.~B.~Varona and W.~A.~Hunt. \emph{Indispensable: The digital capitalist class and Gramscian conditions of revolution} (working title).
-
-\item
-    C.~Brett and L.~M.~B.~Varona. \emph{The effects of changes in effective prices of services on municipal tax rates: Evidence from New Brunswick} (working title).
-\end{revnumerate}
+\end{revnumerate}\vspace*{-2pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -208,55 +202,51 @@ Mount Allison University & luismbvarona@protonmail.com \\
 
 \item
 	\ressubheading{Computing the $S$-Bandwidth of a Quantum Network}{[\hyperref{https://luismbvarona.com/assets/slides/mscs-2024.pdf}{}{}{PDF}]}{2024 Science Atlantic Math., Stats., \& CS Conference (Wolfville, NS)}{Oct. 2024}
-\end{itemize}
+\end{itemize}\vspace*{3pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Research Experience}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
+\setlength{\parskip}{3pt}
+
 \item
-	\ressubheading{Research Assistant}{Mount Allison University}{Computer Science}{Oct. 2026 -- present}
+	\ressubheading{Research Assistant {\normalfont --- Dr.~Liam Keliher}}{Mount Allison University}{Computer Science}{Oct. 2026 -- present}
 	\begin{itemize}
-        \resitem{Adapted heuristic and metaheuristic unweighted bandwidth algorithms to weighted graphs}
-        \resitem{\textbf{Worked for:} Liam Keliher, MtA Department of Mathematics \& Computer Science}
+        \resitem{Designed and implemented a multilevel algorithm for weighted graph bandwidth minimization}
 	\end{itemize}
 
 \item
-	\ressubheading{Research Assistant}{Mount Allison University}{Museum \& Curatorial Studies}{Oct. 2026 -- present}
+	\ressubheading{Research Assistant {\normalfont --- Dr.~Jessica Veevers}}{Mount Allison University}{Museum \& Curatorial Studies}{Oct. 2026 -- present}
 	\begin{itemize}
-        \resitem{Performed OCR on historical documents to build and visualize word co-occurrence networks}
-        \resitem{\textbf{Worked for:} Jessica Veevers, MtA Department of Fine Arts}
+        \resitem{Built a Python pipeline with LLM and VLM integration for processing archival PDF scans}
 	\end{itemize}
 
 \item
-	\ressubheading{Student Researcher}{Mount Allison University}{Political Science}{Apr. 2026 -- Sep. 2026}
+	\ressubheading{Student Researcher {\normalfont --- Dr.~Wayne A.~Hunt}}{Mount Allison University}{Political Science}{Apr. 2026 -- Sep. 2026}
 	\begin{itemize}
-        \resitem{Traced how state and societal dependence on Big Tech degrades conditions of class formation}
-        \resitem{\textbf{Advised by:} Wayne A.~Hunt, MtA Department of Politics \& International Relations}
+        \resitem{Studied societal dependence on Big Tech and AI through the lens of Gramscian class theory}
 	\end{itemize}
 
 \item
-	\ressubheading{Research Assistant}{Mount Allison University}{Economics}{Sep. 2025 -- Dec. 2025; Jul. 2026 -- Sep. 2026}
+	\ressubheading{Research Assistant {\normalfont --- Dr.~Craig Brett}}{Mount Allison University}{Economics}{Sep. 2025 -- Dec. 2025; Jul. 2026 -- Sep. 2026}
 	\begin{itemize}
-        \resitem{Characterized Nash and efficient structures for degree-constrained socioeconomic networks}
+        \resitem{Characterized Nash and efficient structures in social and economic network formation games}
 		\resitem{Modelled the effects of exogenous police expenditure on New Brunswick municipal tax rates}
-        \resitem{\textbf{Worked for:} Craig Brett, MtA Department of Economics}
 	\end{itemize}
 
 \item
-	\ressubheading{Student Researcher}{Mount Allison University}{Computer Science}{Apr. 2026 -- Jul. 2026}
+	\ressubheading{Student Researcher {\normalfont --- Dr.~Nathaniel Johnston}}{Mount Allison University}{Computer Science}{Apr. 2026 -- Jul. 2026}
 	\begin{itemize}
-        \resitem{Designed, generalized, and benchmarked combinatorial graph bandwidth reduction algorithms}
+        \resitem{Improved and implemented an exact algorithm for unweighted graph bandwidth recognition}
 		\resitem{Investigated the training dynamics of bandwidth-constrained RNNs on formal language tasks}
-        \resitem{\textbf{Advised by:} Nathaniel Johnston, MtA Department of Mathematics \& Computer Science}
 	\end{itemize}
 
 \item
-	\ressubheading{Research Assistant}{Mount Allison University}{Mathematics}{Apr. 2024 -- Aug. 2024; May 2025 -- Aug. 2025}
+	\ressubheading{Research Assistant {\normalfont --- Dr.~Nathaniel Johnston}}{Mount Allison University}{Mathematics}{Apr. 2024 -- Aug. 2024; May 2025 -- Aug. 2025}
 	\begin{itemize}
         \resitem{Wrote multithreaded Julia for HPC clusters to survey spectral properties of billions of graphs}
-        \resitem{\textbf{Worked for:} Nathaniel Johnston, MtA Department of Mathematics \& Computer Science}
 	\end{itemize}
 \end{itemize}
 
@@ -300,7 +290,7 @@ Mount Allison University & luismbvarona@protonmail.com \\
 	% \begin{itemize}
 	% 	\resitem{Co-led weekly labs with $30+$ students, fielding questions and marking half of the assignments}
 	% \end{itemize}
-\end{itemize}
+\end{itemize}\vspace*{2pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -308,46 +298,57 @@ Mount Allison University & luismbvarona@protonmail.com \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-12pt}
 \begin{center}\begin{longtable}{l@{\extracolsep{\fill}}r}
+    \multicolumn{2}{c}{UMoncton Site Champion --- Intl. Collegiate Programming Contest Regionals \cftdotfill{\cftdotsep} 2026} \\
     \multicolumn{2}{c}{Independent Student Research Grant (CA\$$9{,}000$) --- Mount Allison University \cftdotfill{\cftdotsep} 2026} \\
-    \multicolumn{2}{c}{$3$\textsuperscript{rd} Place (team award) --- Atlantic Canada Programming Competition \cftdotfill{\cftdotsep} 2025} \\
+    \multicolumn{2}{c}{$3$\textsuperscript{rd} Place --- Atlantic Canada Programming Competition \cftdotfill{\cftdotsep} 2025} \\
     \multicolumn{2}{c}{$2$\textsuperscript{nd} Place Undergrad. Research Award for Computer Science --- Science Atlantic \cftdotfill{\cftdotsep} 2025} \\
     \vphantom{E}
 \end{longtable}
-\end{center}\vspace*{-40pt}
+\end{center}\vspace*{-42pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Other Academic and Professional Activities}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-% \item
-% 	Creator and maintainer of \hyperref{https://luis-varona.github.io/MatrixBandwidth.jl/}{}{}{MatrixBandwidth.jl}, a peer-reviewed Julia package offering fast algorithms for matrix bandwidth minimization and recognition. \\
-%     {\em Jun. 2025 -- present}
-
-% \item
-% 	Contributor to the \hyperref{http://www.oeis.org}{}{}{On-Line Encyclopedia of Integer Sequences}. \\
-% 	{\em Apr. 2025 -- present}
+\setlength{\itemsep}{1pt}
 
 \item
-	Member of the Mount Allison Competitive Programming Team. \\
+	\textbf{Events Director} of the MtA Dunn Student EDI Society. \\
+    {\em Oct. 2026 -- present}
+
+\item
+	\textbf{Creator and maintainer} of \hyperref{https://luis-varona.github.io/MatrixBandwidth.jl/}{}{}{MatrixBandwidth.jl}, a peer-reviewed Julia package offering fast algorithms for matrix bandwidth minimization and recognition. \\
+    {\em Jun. 2025 -- present}
+
+\item
+	\textbf{Contributor} to the \hyperref{http://www.oeis.org}{}{}{On-Line Encyclopedia of Integer Sequences}. \\
+	{\em Apr. 2025 -- present}
+
+\item
+	\textbf{Member} of the MtA Competitive Programming Team. \\
     {\em Nov. 2024 -- present}
 
 \item
-	Student Researcher at the Government of New Brunswick's \hyperref{https://www.gnb.ca/en/campaign/accessibility.html}{}{}{New Brunswick Accessibility Office}, researching accessible education policy. \\
+	\textbf{Student Researcher} at the Government of New Brunswick's \hyperref{https://www.gnb.ca/en/campaign/accessibility.html}{}{}{New Brunswick Accessibility Office}, researching accessible education policy and legislation. \\
     {\em May 2025 -- Aug. 2025}
 
 \item
-	Recruitment and Admissions Support Intern at Mount Allison University. \\
+	\textbf{Recruitment and Admissions Support Intern} at Mount Allison University. \\
     {\em Jan. 2025 -- Apr. 2025}
 
-% \item
-% 	Contributed to the following open-source software packages:{}\vspace{-0.05in}
-% 	\begin{itemize}
-% 		\item \hyperref{http://www.qetlab.com}{}{}{QETLAB}, a MATLAB package for exploring quantum entanglement.
-%         \item \hyperref{https://github.com/spectregrams/spectre/wiki}{}{}{Spectre}, an SDR-agnostic Python program for recording radio signals and spectrograms.
-%         \item \hyperref{https://scikit-learn.org}{}{}{scikit-learn}, a machine learning library for Python.
-%         \item \hyperref{https://pola.rs/}{}{}{Polars}, a high-performance DataFrame library for Python and Rust
-%         \item The \hyperref{https://julialang.org/}{}{}{Julia} standard library (in particular, \hyperref{https://github.com/JuliaLang/LinearAlgebra.jl}{}{}{LinearAlgebra.jl}).
-% 	\end{itemize}
+
+\item
+    \textbf{Refereed} \hyperref{https://doi.org/10.21105/joss.09620}{}{}{\textit{Crux.jl: Deep Reinforcement Learning in Julia}} for the \textit{Journal of Open Source Software}. \\
+
+\item
+	\textbf{Contributed} to the following open-source software packages:{}\vspace{-0.1in}
+	\begin{itemize}
+		\resitem{\hyperref{http://www.qetlab.com}{}{}{QETLAB}, a MATLAB package for exploring quantum entanglement.}
+        \resitem{\hyperref{https://github.com/spectregrams/spectre/wiki}{}{}{Spectre}, an SDR-agnostic Python program for recording radio signals and spectrograms.}
+        \resitem{\hyperref{https://scikit-learn.org}{}{}{scikit-learn}, a machine learning library for Python.}
+        \resitem{\hyperref{https://pola.rs/}{}{}{Polars}, a high-performance DataFrame library for Python and Rust}
+        \resitem{The \hyperref{https://julialang.org/}{}{}{Julia} standard library (in particular, \hyperref{https://github.com/JuliaLang/LinearAlgebra.jl}{}{}{LinearAlgebra.jl}).}
+	\end{itemize}
 \end{itemize}
 \end{document}

@@ -1,0 +1,323 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008-2025 Nathaniel Johnston <nathaniel@njohnston.ca> http://www.njohnston.ca
+% (c) 2026 Luis M. B. Varona <luismbvarona@protonmail.com> https://www.luismbvarona.com
+%
+% Depending on your TeX distribution, you may need to download the revnum and longtable packages for this template to work!
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage{array}
+\usepackage[svgnames]{xcolor}
+\usepackage{enumerate}
+\usepackage{framed}
+\usepackage{longtable}
+\usepackage{revnum}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{tocloft}
+\usepackage{etoolbox}
+\usepackage{multicol}
+\setlength{\multicolsep}{0pt}
+\robustify\cftdotfill
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+\setlength\LTleft{0.2in} % needed to make longtable full-width
+\setlength\LTright{0.2in}
+\setlength{\partopsep}{0pt}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newlength{\resdatewidth}
+\makeatletter
+\newcommand{\resdate}[2]{\leavevmode\begingroup\settowidth{\resdatewidth}{\em #1}\addtolength{\resdatewidth}{1em}%
+  \parshape 2 \@totalleftmargin \dimexpr\linewidth-\resdatewidth\relax \@totalleftmargin \linewidth
+  \rlap{\makebox[\linewidth][r]{\em #1}}#2\par\endgroup}
+\makeatother
+\newcommand{\resheading}[1]{\vspace{-6pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\fboxsep}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-10pt}
+}
+
+% the next four commands allow for the \ressubheading environment to be 1, 2, 3, or 4 subrows, depending on which command you use. This is admittedly hack-ish, and should probably be replaced by a single more flexible command (with optional arguments) in the future
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}[t]{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\ressubheadingb}[6]{
+\begin{tabular*}{6.5in}[t]{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+		\textit{#5} & \textit{#6} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\ressubheadingc}[8]{
+\begin{tabular*}{6.5in}[t]{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+		\textit{#5} & \textit{#6} \\
+		\textit{#7} & \textit{#8} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand\foo[9]{%
+    \def\tempb{#2}%
+    \def\tempc{#3}%
+    \def\tempd{#4}%
+    \def\tempe{#5}%
+    \def\tempf{#6}%
+    \def\tempg{#7}%
+    \def\temph{#8}%
+    \def\tempi{#9}%
+    \foocontinued
+}
+\newcommand\foocontinued[7]{%
+    % Do whatever you want with your 9+7 arguments here.
+}
+
+\newcommand{\ressubheadingd}[1]{
+	\def\argten{#1}%
+	\ressubheadingdb
+}
+\newcommand{\ressubheadingdb}[9]{
+\begin{tabular*}{6.5in}[t]{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{\argten} & #1 \\
+		\textit{#2} & \textit{#3} \\
+		\textit{#4} & \textit{#5} \\
+		\textit{#6} & \textit{#7} \\
+		\textit{#8} & \textit{#9} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+{\large \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\LARGE Luis M. B. Varona}\smallskip & \textbf{\today}\smallskip \\
+Mount Allison University & luismbvarona@protonmail.com \\
+62 York St., Sackville, New Brunswick, Canada \ E4L 1E2 & \hyperref{https://luismbvarona.com}{}{}{luismbvarona.com} \\
+\end{tabular*}}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{6pt}
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+	\ressubheading{Mount Allison University}{Sackville, NB}{Bachelor of Arts with First Class Honours}{2022 -- 2027 {\normalfont (expected)}}
+	\begin{itemize}
+		\resitem{\textbf{Triple Major} in Mathematics (Hons.), Political Science, and Computer Science \& Economics}
+        \resitem{\textbf{Double Minor} in Canadian Public Policy and International Politics}
+        \resitem{Honours thesis completed in May 2026 under Dr.~Nathaniel Johnston (A+)}
+        % \resitem{\textbf{Cumulative GPA:} $4.1/4.3$ (math \& CS), $3.8/4.3$ (overall)}
+	\end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Publications}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.15in}\subsection*{Peer-Reviewed Journal Articles}
+\begin{revnumerate}
+\setlength{\itemsep}{1pt}
+
+\item
+	N.~Johnston, S.~Plosker, C.~Torrance, and L.~M.~B.~Varona. Generalizing the Cauchy--Schwarz inequality: Hadamard powers and tensor products. \emph{Linear and Multilinear Algebra}, 2026. doi:\hyperref{https://doi.org/10.1080/03081087.2026.2707240}{}{}{10.1080/03081087.2026.2707240}
+
+\item
+    L.~M.~B.~Varona. MatrixBandwidth.jl: Fast algorithms for matrix bandwidth minimization and recognition. \emph{Journal of Open Source Software}, 2025. doi:\hyperref{https://doi.org/10.21105/joss.09136}{}{}{10.21105/joss.09136}
+\end{revnumerate}
+
+
+\vspace{-0.2in}\subsection*{Submitted Papers and Preprints}
+\begin{revnumerate}
+\setlength{\itemsep}{1pt}
+
+% \item
+% 	C.~Brett and L.~M.~B.~Varona. \emph{Unilateral link formation in degree-constrained communication networks}. E-print: \hyperref{https://doi.org/10.48550/arXiv.2701.XXXXX}{}{}{arXiv:2701.XXXXX} [math.CO], 2027. [\textbf{TODO:} Update when out]
+
+% \item
+% 	L.~M.~B.~Varona and W.~A.~Hunt. \emph{Indispensable: The digital capitalist class and Gramscian conditions of revolution}. E-print: \hyperref{https://doi.org/10.2139/ssrn.XXXXXXX}{}{}{SSRN~XXXXXXX}, 2026. [\textbf{TODO:} Update when out]
+
+\item
+	N.~Johnston, S.~Plosker, and L.~M.~B.~Varona. \emph{Enumeration of Laplacian integral and $\{-1,0,1\}$-diagonalizable graphs}. E-print: \hyperref{https://doi.org/10.48550/arXiv.2607.06336}{}{}{arXiv:2607.06336} [math.CO], 2026.
+
+\item
+	L.~M.~B.~Varona. \emph{A polynomial-time algorithm for recognizing high-bandwidth graphs}. E-print: \hyperref{https://doi.org/10.48550/arXiv.2602.01755}{}{}{arXiv:2602.01755} [cs.DS], 2026.
+
+\item
+	F.~A.~Steinke and L.~M.~B.~Varona. \emph{Efficient spectral bounds on the chromatic number of Hamming, Johnson, and Kneser graph powers}. E-print: \hyperref{https://doi.org/10.48550/arXiv.2601.01962}{}{}{arXiv:2601.01962} [math.CO], 2026.
+\end{revnumerate}\vspace*{-2pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Research Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\setlength{\parskip}{3pt}
+
+\item
+	\ressubheading{Research Assistant {\normalfont --- Dr.~Liam Keliher}}{Mount Allison University}{Computer Science}{Oct. 2026 -- present}
+	\begin{itemize}
+        \resitem{Designed and implemented a multilevel algorithm for weighted graph bandwidth minimization}
+	\end{itemize}
+
+\item
+	\ressubheading{Research Assistant {\normalfont --- Dr.~Jessica Veevers}}{Mount Allison University}{Museum \& Curatorial Studies}{Oct. 2026 -- present}
+	\begin{itemize}
+        \resitem{Built a Python pipeline with LLM and VLM integration for processing archival PDF scans}
+	\end{itemize}
+
+\item
+	\ressubheading{Student Researcher {\normalfont --- Dr.~Wayne A.~Hunt}}{Mount Allison University}{Political Science}{Apr. 2026 -- Sep. 2026}
+	\begin{itemize}
+        \resitem{Studied societal dependence on Big Tech and AI through the lens of Gramscian class theory}
+	\end{itemize}
+
+\item
+	\ressubheading{Research Assistant {\normalfont --- Dr.~Craig Brett}}{Mount Allison University}{Economics}{Sep. 2025 -- Dec. 2025; Jul. 2026 -- Sep. 2026}
+	\begin{itemize}
+        \resitem{Characterized Nash and efficient structures in social and economic network formation games}
+		\resitem{Modelled the effects of exogenous police expenditure on New Brunswick municipal tax rates}
+	\end{itemize}
+
+\item
+	\ressubheading{Student Researcher {\normalfont --- Dr.~Nathaniel Johnston}}{Mount Allison University}{Computer Science}{Apr. 2026 -- Jul. 2026}
+	\begin{itemize}
+        \resitem{Improved and implemented an exact algorithm for unweighted graph bandwidth recognition}
+		\resitem{Investigated the training dynamics of bandwidth-constrained RNNs on formal language tasks}
+	\end{itemize}
+
+\item
+	\ressubheading{Research Assistant {\normalfont --- Dr.~Nathaniel Johnston}}{Mount Allison University}{Mathematics}{Apr. 2024 -- Aug. 2024; May 2025 -- Aug. 2025}
+	\begin{itemize}
+        \resitem{Wrote multithreaded Julia code for HPC clusters to analyze the spectra of billions of graphs}
+	\end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Presentations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+	\ressubheading{Design and Optimization of Degree-Constrained Social Networks}{[\hyperref{https://luismbvarona.com/assets/slides/mscs-2026.pdf}{}{}{PDF}]}{2026 Science Atlantic Math., Stats., \& CS Conference (Saint John, NB)}{Oct. 2026}
+
+\item
+    \ressubheading{Numerical Mode-Finding in Layered Media via Banded RRQR}{[\hyperref{https://luismbvarona.com/assets/slides/cupc-2026.pdf}{}{}{PDF}]}{61\textsuperscript{st} Canadian Undergrad. Physics Conference (Hamilton, ON)}{Oct. 2026}
+
+\item
+	\ressubheading{Heuristic Bandwidth Reduction Algorithms for Weighted Graphs}{[\hyperref{https://luismbvarona.com/assets/slides/eccc-2026.pdf}{}{}{PDF}]}{19\textsuperscript{th} East Coast Combinatorics Conference (Sackville, NB)}{Jul. 2026}
+
+\item
+	\ressubheading{Spectral Heuristics for $k$-Incoherent Decompositions}{[\hyperref{https://luismbvarona.com/assets/slides/aupac-2026.pdf}{}{}{PDF}]}{2026 Atlantic Undergrad. Physics \& Astro. Conference (Charlottetown, PE)}{Mar. 2026}
+
+\item
+	\ressubheading{Advancements in Graph Bandwidth Reduction}{[\hyperref{https://luismbvarona.com/assets/slides/mscs-2025.pdf}{}{}{PDF}]}{2025 Science Atlantic Math., Stats., \& CS Conference (Sydney, NS)}{Oct. 2025}
+
+\item
+	\ressubheading{$S$-Bandwidth as an Indicator of PST on Quantum Networks}{[\hyperref{https://luismbvarona.com/assets/slides/aupac-2025.pdf}{}{}{PDF}]}{2025 Atlantic Undergrad. Physics \& Astro. Conference (St. John's, NL)}{Feb. 2025}
+
+\item
+	\ressubheading{Computing the $S$-Bandwidth of a Quantum Network}{[\hyperref{https://luismbvarona.com/assets/slides/mscs-2024.pdf}{}{}{PDF}]}{2024 Science Atlantic Math., Stats., \& CS Conference (Wolfville, NS)}{Oct. 2024}
+\end{itemize}\vspace*{3pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Awards, Grants, and Honours}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-12pt}
+\begin{center}\begin{longtable}{l@{\extracolsep{\fill}}r}
+    \multicolumn{2}{c}{UMoncton Site Champion --- Intl. Collegiate Programming Contest Regionals \cftdotfill{\cftdotsep} 2026} \\
+    \multicolumn{2}{c}{Independent Student Research Grant (CA\$$9{,}000$) --- Mount Allison University \cftdotfill{\cftdotsep} 2026} \\
+    \multicolumn{2}{c}{$3$\textsuperscript{rd} Place --- Atlantic Canada Programming Competition \cftdotfill{\cftdotsep} 2025} \\
+    \multicolumn{2}{c}{$2$\textsuperscript{nd} Place Undergrad. Research Award for Computer Science --- Science Atlantic \cftdotfill{\cftdotsep} 2025} \\
+    \vphantom{E}
+\end{longtable}
+\end{center}\vspace*{-42pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Other Academic and Professional Activities}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+
+\item
+	\resdate{Oct. 2026 -- present}{\textbf{Events Director} of the MtA Dunn Student EDI Society.}
+
+% \item
+% 	\textbf{Creator and maintainer} of \hyperref{https://luis-varona.github.io/MatrixBandwidth.jl/}{}{}{MatrixBandwidth.jl}, a peer-reviewed Julia package offering fast algorithms for matrix bandwidth minimization and recognition. \\
+%     {\em Jun. 2025 -- present}
+
+% \item
+% 	\resdate{Apr. 2025 -- present}{\textbf{Contributor} to the \hyperref{http://www.oeis.org}{}{}{On-Line Encyclopedia of Integer Sequences}.}
+
+% \item
+% 	\textbf{Member} of the MtA Competitive Programming Team. \\
+%     {\em Nov. 2024 -- present}
+
+\item
+	\resdate{Sep. 2024 -- present}{\textbf{Teaching Assistant/Marker} at Mount Allison University:}{}\vspace{-0.1in}
+    \begin{multicols}{2}
+    \small\setlength{\topskip}{7.5pt}
+    \begin{itemize}\setlength{\itemsep}{2pt}\setlength{\parskip}{2pt}
+        \resitem{Computer Science Help Centre}
+        \resitem{Mathematics Help Centre}
+        \resitem{Data Acquisition \& Organization (DATA 3101)}
+        \resitem{Linear Algebra (MATH 2221)}
+        \resitem{Calculus II (MATH 1121)}
+        \resitem{Applied Calculus (MATH 1151)}
+    \end{itemize}
+    \end{multicols}
+
+\item
+	\resdate{May 2025 -- Aug. 2025}{\textbf{Student Researcher} at the \hyperref{https://www.gnb.ca/en/campaign/accessibility.html}{}{}{New Brunswick Accessibility Office}.}
+
+% \item
+% 	\resdate{Jan. 2025 -- Apr. 2025}{\textbf{Recruitment and Admissions Support Intern} at Mount Allison University.}
+
+\item
+    \textbf{Refereed} \hyperref{https://doi.org/10.21105/joss.09620}{}{}{\textit{Crux.jl: Deep Reinforcement Learning in Julia}} for the \textit{Journal of Open Source Software}. \\
+
+% \item
+% 	\textbf{Contributed} to the following open-source software packages:{}\vspace{-0.1in}
+% 	\begin{itemize}
+% 		\resitem{\hyperref{http://www.qetlab.com}{}{}{QETLAB}, a MATLAB package for exploring quantum entanglement.}
+%         \resitem{\hyperref{https://github.com/spectregrams/spectre/wiki}{}{}{Spectre}, an SDR-agnostic Python program for recording radio signals and spectrograms.}
+%         \resitem{\hyperref{https://scikit-learn.org}{}{}{scikit-learn}, a machine learning library for Python.}
+%         \resitem{\hyperref{https://pola.rs/}{}{}{Polars}, a high-performance DataFrame library for Python and Rust}
+%         \resitem{The \hyperref{https://julialang.org/}{}{}{Julia} standard library (in particular, \hyperref{https://github.com/JuliaLang/LinearAlgebra.jl}{}{}{LinearAlgebra.jl}).}
+% 	\end{itemize}
+\end{itemize}
+\end{document}

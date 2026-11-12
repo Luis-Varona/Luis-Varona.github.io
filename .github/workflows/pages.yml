@@ -26,11 +26,13 @@ jobs:
       - name: Create output directories
         run: mkdir -p assets/cv/ assets/slides/
 
-      - name: Cache compiled CV
+      - name: Cache compiled CVs
         uses: actions/cache@v6
         id: cv-cache
         with:
-          path: assets/cv/cv.pdf
+          path: |
+            assets/cv/cv.pdf
+            assets/cv/cv_short.pdf
           key: cv-${{ hashFiles('_cv/**') }}
 
       - name: Cache compiled slides
@@ -53,14 +55,14 @@ jobs:
             texlive-science \
             texlive-luatex
 
-      - name: Compile CV
+      - name: Compile CVs
         if: steps.cv-cache.outputs.cache-hit != 'true'
         run: |
           make -C _cv/
-          cp _cv/cv.pdf assets/cv/cv.pdf
+          cp _cv/cv.pdf _cv/cv_short.pdf assets/cv/
 
       - name: Expose CV source code
-        run: cp _cv/cv.tex assets/cv/cv.tex
+        run: cp _cv/cv.tex _cv/cv_short.tex assets/cv/
 
       - name: Compile slides
         if: steps.slides-cache.outputs.cache-hit != 'true'
