@@ -24,6 +24,9 @@ L. M. B. Varona. MatrixBandwidth.jl: Fast algorithms for matrix bandwidth minimi
 
 <ol reversed>
 <li markdown="1">
+L. M. B. Varona and W. A. Hunt. *Indispensable: The digital capitalist class and Gramscian conditions of revolution.* E-print: APSA Preprints, doi:[10.33774/apsa-2026-7606t](https://doi.org/10.33774/apsa-2026-7606t) [Political Theory], 2026.
+</li>
+<li markdown="1">
 N. Johnston, S. Plosker, and L. M. B. Varona. *Enumeration of Laplacian integral and $$\{-1,0,1\}$$-diagonalizable graphs.* E-print: [arXiv:2607.06336](https://doi.org/10.48550/arXiv.2607.06336) [math.CO], 2026.
 </li>
 <li markdown="1">
@@ -34,19 +37,7 @@ F. A. Steinke and L. M. B. Varona. *Efficient spectral bounds on the chromatic n
 </li>
 </ol>
 
-## Drafts in Preparation
-
-<ol reversed>
-<li markdown="1">
-C. Brett and L. M. B. Varona. *Unilateral link formation in degree-constrained communication networks* (working title).
-</li>
-<li markdown="1">
-L. M. B. Varona and W. A. Hunt. *Indispensable: The digital capitalist class and Gramscian conditions of revolution* (working title).
-</li>
-<li markdown="1">
-C. Brett and L. M. B. Varona. *The effects of changes in effective prices of services on municipal tax rates: Evidence from New Brunswick* (working title).
-</li>
-</ol>
+I am also currently writing two papers with Dr. Craig Brett: *Unilateral link formation in degree-constrained communication networks*, and *The effects of changes in effective prices of services on municipal tax rates: Evidence from New Brunswick*.
 
 ## Presentations
 
@@ -58,7 +49,7 @@ Design and Optimization of Degree-Constrained Social Networks. 2026 Science Atla
 Numerical Mode-Finding in Layered Media via Banded RRQR. 61<sup>st</sup> Canadian Undergrad. Physics Conference, McMaster University (Hamilton, ON). October 2026. [\[PDF\]](/assets/slides/cupc-2026.pdf) [\[source code\]](/assets/slides/cupc-2026.tar.gz)
 </li>
 <li markdown="1">
-Heuristic Bandwidth Reduction Algorithms for Weighted Graphs. 19<sup>th</sup> East Coast Combinatorics Conference, Mount Allison University (Sackville, NB). July 2026. *(Joint work with A. Matheson.)* [\[PDF\]](/assets/slides/eccc-2026.pdf) [\[source code\]](/assets/slides/eccc-2026.tar.gz)
+Heuristic Bandwidth Reduction Algorithms for Weighted Graphs. 19<sup>th</sup> East Coast Combinatorics Conference, Mount Allison University (Sackville, NB). July 2026. *(Joint work with A. B. Matheson.)* [\[PDF\]](/assets/slides/eccc-2026.pdf) [\[source code\]](/assets/slides/eccc-2026.tar.gz)
 </li>
 <li markdown="1">
 Spectral Heuristics for $$k$$-Incoherent Decompositions. 2026 Atlantic Undergrad. Physics & Astro. Conference, University of Prince Edward Island (Charlottetown, PE). March 2026. [\[PDF\]](/assets/slides/aupac-2026.pdf) [\[source code\]](/assets/slides/aupac-2026.tar.gz)

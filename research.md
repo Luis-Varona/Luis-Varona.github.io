@@ -8,7 +8,7 @@ description: >
 1. TOC
 {:toc}
 
-This is an overview of my research in political science, computer science, economics, and mathematics, largely (but not entirely) conducted under the supervision of Drs. [Nathaniel Johnston](https://njohnston.ca/), [Craig Brett](https://mta.ca/directory/craig-brett), [Wayne A. Hunt](https://mta.ca/directory/wayne-hunt), and [Liam Keliher](https://mta.ca/directory/liam-keliher) at Mount Allison University. Lately, I have mostly gravitated toward political science and CS (still, essentially all CS research involves copious amounts of math), but my first few years of research as an undergrad centred almost exclusively around economics and math.
+This is an overview of my research in political science, computer science, economics, and mathematics, largely (but not entirely) conducted under the supervision of Drs. [Craig Brett](https://mta.ca/directory/craig-brett), [Wayne A. Hunt](https://mta.ca/directory/wayne-hunt), [Nathaniel Johnston](https://njohnston.ca/), [Liam Keliher](https://mta.ca/directory/liam-keliher), and [Jessica Veevers](https://mta.ca/directory/jessica-veevers) at Mount Allison University. Lately, I have mostly gravitated toward political science and CS (still, essentially all CS research involves copious amounts of math), but my first few years of research as an undergrad centred almost exclusively around economics and math.
 
 ## Political Science
 
@@ -17,9 +17,9 @@ Although I am presently seeking to do graduate research in CS, I would love to d
 ### Technology & society
 {:#technology-and-society}
 
-In Summer 2026, I researched the political philosophy of technology and society alongside Dr. Hunt. It constituted only part-time work supplementing a grant I received for full-time CS research, but it was incredibly interesting nonetheless—it initially grew out of three essays I wrote for Dr. Hunt's full-year Political & Cultural Change seminar, which he proposed we synthesize into a paper with some additional political philosophy elements. Presently, we are writing up a draft tentatively entitled *Indispensable: The digital capitalist class and Gramscian conditions of revolution*. We are hoping to eventually turn it into a book as well.
+In Summer 2026, I researched the class politics of technology alongside Dr. Hunt. It constituted only part-time work supplementing a grant I received for full-time CS research, but it was incredibly interesting nonetheless—it initially grew out of three essays I wrote for Dr. Hunt's full-year Political & Cultural Change seminar, which he proposed we synthesize into a paper with some additional political philosophy elements. We have since finished the initial draft of our paper, which we [posted on APSA Preprints](https://doi.org/10.33774/apsa-2026-7606t) and submitted to a journal. (We are hoping to eventually turn it into a book as well.)
 
-In particular, we argue that a new "digital capitalist class" consisting of Big Tech firms has arisen, whose control of technological infrastructure has made it indispensable to both the state and society. Using a class-theoretic framework, we study how this has eroded the Marxist and Gramscian conditions of revolution across the interconnected domains of personal privacy, institutional governance, national security, and civil society, as well as how to rebuild these conditions. We also draw on theoretical frameworks such as Rouvroy and Berns's algorithmic governmentality, Couldry and Mejias's data colonialism, Giblin and Doctorow's chokepoint capitalism, and more to develop this argument.
+In particular, we argue that a new "digital capitalist class" consisting of Big Tech firms has arisen, whose monopoly on essential technological infrastructure has made it indispensable to both society and state. Using a class-theoretic framework, we study how this has degraded the Marxist and Gramscian conditions of revolution across the interconnected domains of corporate surveillance, institutional governance, national security, and civil society, as well as how to rebuild these conditions. We also draw on theoretical frameworks such as Foucault's regime of truth, Rouvroy and Berns's algorithmic governmentality, Couldry and Mejias's data colonialism, Giblin and Doctorow's chokepoint capitalism, and more to develop this argument.
 
 ---
 
@@ -38,6 +38,10 @@ More recently, I have been collaborating with Dr. Keliher and Alexander B. Mathe
 My main research project in the Summer 2026 term, funded by an independent student research grant advised by Dr. Johnston, investigated training dynamics of recurrent neural networks (RNNs) whose weight matrices have bounded bandwidth. (This utilizes the matrix-theoretic interpretation of bandwidth, as we treat the weight matrix of an RNN as the adjacency matrix of a directed graph.) Bandwidth controls how far information can propagate through the hidden state per timestep; this allows one to mathematically predict at which tasks bandwidth-constrained RNNs excel and on which they underperform. Therefore, I used formal language classification and modelling tasks (mostly regular languages, but with copying thrown in as well) to test such predictions.
 
 This idea originated with [Dr. Marco Cognetta](https://mcognetta.github.io/) of Google—thus far an informal mentor of sorts on the project—although it has since evolved considerably from his initial research proposal. Although the summer proved an inadequate period to finish the project, I plan to resume research sometime in the coming months.
+
+### AI pipelines
+
+I am currently building a Python pipeline with LLM and VLM integration to process archival PDF scans for Dr. Veevers and MtA's Department of Fine Arts. <!-- TODO: Update later -->
 
 ---
 
